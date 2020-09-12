@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 0.75%;
-  font-family: "Comfortaa", cursive;
+  font-family: "Chau Philomene One", sans-serif;
   font-size: 14px;
   box-sizing: border-box;
   color: #6c7279;
@@ -42,8 +42,9 @@ h3 {
 .btn {
   outline: none;
   text-decoration: none;
-  background-color: #fe7a1a;
-  border: 1px solid #fe7a1a;
+
+  background-color: rgb(255, 194, 1);
+  border: 1px solid rgb(255, 194, 1);
   padding: 10px 30px;
   color: black;
   text-align: center;
@@ -53,13 +54,20 @@ h3 {
   transition: all 0.3s linear;
 }
 .secondary-btn {
-  border: 2px solid #fe7a1a;
-  background-color: rgb(252, 249, 249);
+  border: 2px solid rgb(255, 194, 1);
+  background-color: rgb(255, 194, 1);
   transition: all 0.3s linear;
+  border-radius: 50px;
   margin-left: 10px;
 }
+.secondary-btn:hover {
+  background-color: rgb(225, 19, 131);
+  border: 2px solid rgb(225, 19, 131);
+  transform: translateY(5px);
+}
 .btn:hover {
-  background-color: rgb(250, 148, 74);
+  background-color: rgb(225, 19, 131);
+  border: 2px solid rgb(225, 19, 131);
   transform: translateY(5px);
 }
 
@@ -68,7 +76,7 @@ h3 {
 
 .header {
   height: 4vh;
-  background-color: #31344e;
+  background-color: rgb(62, 142, 222);
   z-index: 10;
   transition: 0.3s;
   display: flex;
@@ -111,7 +119,7 @@ h3 {
 .social__icon {
   display: block;
   height: 18px;
-  background-color: #31344e;
+  background-color: rgb(62, 142, 222);
 }
 svg {
   fill: white;
@@ -177,11 +185,12 @@ svg:hover {
 
 .nav__link {
   margin-left: 20px;
+  font-family: "Chau Philomene One", sans-serif;
   padding: 1rem;
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.877);
 }
 
@@ -192,7 +201,7 @@ svg:hover {
   margin-right: 30px;
 }
 .nav .current {
-  color: #ff9243;
+  color: rgb(0, 0, 0);
 }
 /* End of Navigation */
 
@@ -217,8 +226,7 @@ svg:hover {
 .main-btn {
   width: 20%;
   box-shadow: 0px 0px 30px rgb(100, 44, 1);
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-radius: 50px;
   font-weight: 700;
 }
 .main-btn:hover {
@@ -338,13 +346,7 @@ svg:hover {
 }
 
 .about-greetings {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#bfffea),
-    to(#9de2ff)
-  );
+  background: #fff;
   background: linear-gradient(left, #38d39f, #38a4d3);
   background-clip: text;
   -webkit-background-clip: text;
@@ -364,8 +366,8 @@ svg:hover {
   width: 400px;
   position: absolute;
   background-color: transparent;
-  top: 63%;
-  left: 63%;
+  top: 60%;
+  left: 65%;
 }
 /* ABOUT SVG ANIMATION */
 #first-sqr {
