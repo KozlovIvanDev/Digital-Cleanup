@@ -16,7 +16,20 @@ $(document).ready(function () {
         }
     });
 });
+var headerHeight = $('header').outerHeight();
 
+$(".nav__link").click(function (e) {
+
+    $(this).addClass('current').siblings().removeClass('current')
+
+    var linkHref = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(linkHref).offset().top - headerHeight
+    }, 1000);
+
+    e.preventDefault();
+});
 (function () {
     var throttle = function (type, name, obj) {
         var obj = obj || window;
@@ -52,3 +65,10 @@ hamburger.addEventListener("click", () => {
         link.classList.toggle("fade");
     });
 });
+
+
+var year = new Date().getFullYear();
+
+var date = `Copyright &copy; Let's do it, Ukraine! ${year}. All Rights Reserved.`;
+
+document.getElementsByClassName('copyright_date')[0].innerHTML = date;

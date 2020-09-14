@@ -72,6 +72,36 @@ h3 {
   transform: translateY(5px);
 }
 
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100000000;
+}
+
+.loader .inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load-spin {
+  animation: load-spin 1s infinite;
+  width: 100px;
+}
+
+@keyframes load-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* Header
 ===================*/
 
@@ -561,6 +591,22 @@ svg:hover {
 
 /*  */
 
+.copyright {
+  padding: 20px 0;
+  background-color: rgb(62, 142, 222);
+}
+
+.copyright__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+.copyright__text a {
+  color: #fdad73;
+  text-decoration: none;
+}
+
 /* Intro-title query */
 @media screen and (min-width: 0px) and (max-width: 399px) {
   .intro__title {
@@ -569,7 +615,7 @@ svg:hover {
   .about-par {
     font-size: 0.6rem;
   }
-    .about-inner {
+  .about-inner {
     height: 80vh;
   }
 }
@@ -581,7 +627,7 @@ svg:hover {
   .intro__title {
     font-size: 1.5rem;
   }
-    .about-inner {
+  .about-inner {
     height: 70vh;
   }
 }
@@ -608,10 +654,11 @@ svg:hover {
   .about-inner {
     height: 70vh;
   }
+  
 }
 
 /* Navigation query and mobile editing*/
-@media screen and (min-width: 0px) and (max-width: 930px) {
+@media screen and (min-width: 0px) and (max-width: 1086px) {
   .about {
     height: 45vh;
     padding-top: 200px;
