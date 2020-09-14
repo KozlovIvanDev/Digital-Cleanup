@@ -558,15 +558,14 @@ svg:hover {
 
 /* End of About
 ===================*/
-@media screen and (min-width: 0px) and (max-width: 624px) {
-
-}
-
 
 /* Intro-title query */
 @media screen and (min-width: 0px) and (max-width: 399px) {
   .intro__title {
     font-size: 1rem;
+  }
+  .about-par {
+    font-size: 0.6rem;
   }
 }
 
@@ -574,18 +573,37 @@ svg:hover {
   .intro__title {
     font-size: 1.5rem;
   }
+  .about-par {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 773px) and (max-width: 929px) {
   .intro__title {
     font-size: 2rem;
   }
+  .about-par {
+    font-size: 1rem;
+  }
 }
 
-/* Navigation query */
+/* Navigation query and mobile editing*/
 @media screen and (min-width: 0px) and (max-width: 930px) {
+  .about {
+    height: 45vh;
+    padding-top: 200px;
+  }
+  .about-inner {
+    height: 80vh;
+    padding: 30px;
+  }
+  .about-par {
+    font-size: 1.2rem;
+  }
+  
   .intro{
     background-attachment: scroll;
+    height: 91vh;
   }
    
   .line {
