@@ -569,12 +569,21 @@ svg:hover {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 773px) {
+@media screen and (min-width: 0px) and (max-width: 454px) {
+  .about-inner {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 454px) and (max-width: 773px) {
   .intro__title {
     font-size: 1.5rem;
   }
   .about-par {
     font-size: 0.8rem;
+  }
+  .about-inner {
+    height: 60vh;
   }
 }
 
@@ -585,6 +594,9 @@ svg:hover {
   .about-par {
     font-size: 1rem;
   }
+  .about-inner {
+    height: 70vh;
+  }
 }
 
 /* Navigation query and mobile editing*/
@@ -594,18 +606,17 @@ svg:hover {
     padding-top: 200px;
   }
   .about-inner {
-    height: 80vh;
     padding: 30px;
   }
   .about-par {
     font-size: 1.2rem;
   }
-  
-  .intro{
+
+  .intro {
     background-attachment: scroll;
     height: 91vh;
   }
-   
+
   .line {
     width: 30px;
     height: 3px;
