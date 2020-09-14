@@ -54,16 +54,26 @@ h3 {
   transition: all 0.3s linear;
 }
 .secondary-btn {
-  border: 2px solid rgb(255, 194, 1);
-  background-color: rgb(255, 194, 1);
+  border: 2px solid rgb(225, 19, 131);
+  background-color: rgb(225, 19, 131);
   transition: all 0.3s linear;
   font-size: 15px;
   border-radius: 50px;
   margin-left: 10px;
+
+  outline: none;
+  text-decoration: none;
+
+  padding: 10px 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+  transition: all 0.3s linear;
 }
 .secondary-btn:hover {
-  background-color: rgb(225, 19, 131);
-  border: 2px solid rgb(225, 19, 131);
+  background-color: rgb(255, 223, 119);
+  border: 2px solid rgb(255, 223, 119);
   transform: translateY(5px);
 }
 .btn:hover {
@@ -349,6 +359,14 @@ svg:hover {
   text-align: center;
   letter-spacing: 1px;
 }
+.intro__inner h2 {
+  color: rgb(255, 194, 1);
+  width: 80%;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 1.2px;
+  padding-bottom: 15px;
+}
 /* End of Intro
 ===================*/
 
@@ -356,32 +374,23 @@ svg:hover {
 ===================*/
 .about {
   width: 100%;
-  height: 90vh;
+  height: 100%;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
 .about-container {
-  height: 100%;
   position: relative;
-  background-color: rgb(252, 249, 249);
-  padding-bottom: 300px;
-}
-/* Main section */
-.about-inner {
+  background: rgb(255, 194, 1);
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 75%;
-  height: 80vh;
-  text-align: left;
+  margin: 0 auto;
+  height: 100%;
   padding: 55px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../img/about-back.png) no-repeat center;
-  background-size: cover;
-  box-shadow: 0px 0px 30px rgb(201, 201, 201);
+  background: rgb(255, 194, 1);
   border-radius: 10px;
 }
+/* Main section */
 .about-text {
   text-align: center;
   padding-left: 0;
@@ -389,11 +398,8 @@ svg:hover {
 }
 
 .about-greetings {
-  background: #fff;
-  background: linear-gradient(left, #38d39f, #38a4d3);
+  color: #000;
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 2rem;
   letter-spacing: 0.2;
   font-weight: 600;
@@ -403,7 +409,7 @@ svg:hover {
   padding-bottom: 20px;
   font-size: 1.5rem;
   font-weight: 400;
-  color: rgb(231, 231, 231);
+  color: rgb(0, 0, 0);
 }
 .about-svg-anim {
   width: 400px;
@@ -589,8 +595,50 @@ svg:hover {
 /* End of About
 ===================*/
 
-/*  */
+/* HOW TO JOIN
+===================*/
+.info {
+  color: #000;
+  width: 90%;
+  margin: 0 auto;
+}
+.info-title {
+  font-size: 1.7rem;
+  text-align: left;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+.info-title span {
+  font-size: 1.8rem;
+  color: rgb(225, 19, 131);
+  padding-right: 15px;
+}
+.info-maintxt {
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+  margin: 30px;
+  padding-top: 50px;
+}
+.info-par {
+  font-size: 1.5rem;
+  text-align: left;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 30px 30px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
 
+.grid-item {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* End of HOW TO JOIN
+===================*/
 .copyright {
   padding: 20px 0;
   background-color: rgb(62, 142, 222);
@@ -654,20 +702,16 @@ svg:hover {
   .about-inner {
     height: 70vh;
   }
-  
 }
 
 /* Navigation query and mobile editing*/
 @media screen and (min-width: 0px) and (max-width: 1086px) {
-  .about {
-    height: 45vh;
-    padding-top: 200px;
-  }
-  .about-inner {
-    padding: 30px;
-  }
   .about-par {
     font-size: 1.2rem;
+  }
+  .grid-container {
+    grid-gap: 20px 20px;
+    grid-template-columns: auto;
   }
 
   .intro {
