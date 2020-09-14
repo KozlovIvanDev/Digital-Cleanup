@@ -584,6 +584,10 @@ svg:hover {
 
 /* Navigation query */
 @media screen and (min-width: 0px) and (max-width: 930px) {
+  .intro{
+    background-attachment: scroll;
+  }
+   
   .line {
     width: 30px;
     height: 3px;
