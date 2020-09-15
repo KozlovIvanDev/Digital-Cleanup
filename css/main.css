@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 0.75%;
-  font-family: "Chau Philomene One", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   box-sizing: border-box;
   color: #6c7279;
@@ -81,6 +81,24 @@ h3 {
   border: 2px solid rgb(225, 19, 131);
   transform: translateY(5px);
 }
+.title {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.heading {
+  color: black;
+  font-size: 36px;
+  letter-spacing: 0.2;
+  font-weight: 600;
+}
+.subtitle {
+  color: rgb(94, 94, 94);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
 
 .loader {
   width: 100%;
@@ -112,7 +130,7 @@ h3 {
     transform: rotate(360deg);
   }
 }
-/* Header
+/* HEADER
 ===================*/
 
 .header {
@@ -124,16 +142,10 @@ h3 {
   align-items: center;
   justify-content: space-between;
   padding: 30px 5%;
-}
-
-.sticky {
   position: sticky;
   top: 0%;
   left: 0%;
-  height: 4vh;
 }
-
-/* Logo */
 
 .header__logo {
   display: flex;
@@ -141,9 +153,7 @@ h3 {
   text-decoration: none;
 }
 
-/*End of Logo */
-
-/* Social */
+/* SOCIAL */
 .social {
   display: flex;
   justify-content: right;
@@ -169,29 +179,8 @@ svg:hover {
   fill: white;
   opacity: 0.8;
 }
-/* End of Social */
+/* END OF SOCIAL */
 
-/* End of Header
-===================*/
-
-.title {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-.heading {
-  color: black;
-  font-size: 36px;
-  letter-spacing: 0.2;
-  font-weight: 600;
-}
-.subtitle {
-  color: rgb(94, 94, 94);
-  text-align: center;
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: 500;
-}
 /* #action {
     position: fixed;
     bottom: 30px;
@@ -218,7 +207,7 @@ svg:hover {
     opacity: 1;
   } */
 
-/* Navigation */
+/* NAVIGATION */
 .nav__link {
   margin-left: 20px;
   font-family: "Chau Philomene One", sans-serif;
@@ -255,9 +244,12 @@ svg:hover {
 .nav-links a {
   text-decoration: none;
 }
-/* End of Navigation */
+/* END OF NAVIGATION */
 
-/* Intro
+/* End of Header
+===================*/
+
+/* INTRO
 ===================*/
 
 .intro {
@@ -277,7 +269,7 @@ svg:hover {
 }
 .main-btn {
   width: 170px;
-  box-shadow: 0px 0px 30px rgb(100, 44, 1);
+  box-shadow: 0px 0px 30px rgba(39, 17, 0, 0.596);
   border-radius: 50px;
   font-weight: 700;
   font-size: 15px;
@@ -367,10 +359,10 @@ svg:hover {
   letter-spacing: 1.2px;
   padding-bottom: 15px;
 }
-/* End of Intro
+/* END OF INTRO
 ===================*/
 
-/* About
+/* ABOUT
 ===================*/
 .about {
   width: 100%;
@@ -390,7 +382,6 @@ svg:hover {
   background: rgb(255, 194, 1);
   border-radius: 10px;
 }
-/* Main section */
 .about-text {
   text-align: center;
   padding-left: 0;
@@ -418,181 +409,7 @@ svg:hover {
   top: 60%;
   left: 65%;
 }
-/* ABOUT SVG ANIMATION */
-#first-sqr {
-  animation: f-sqr-rotation 5s infinite linear;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes f-sqr-rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1800deg);
-  }
-}
-
-#second-sqr {
-  animation: s-sqr-rotation 4s infinite linear;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes s-sqr-rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-1800deg);
-  }
-}
-#third-sqr {
-  animation: t-sqr-rotation 2s infinite ease-out;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes t-sqr-rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-#or-sqr {
-  animation: or-sqr 1s infinite linear;
-}
-@keyframes or-sqr {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  33% {
-    transform: translate(5px, 10px);
-  }
-  66% {
-    transform: translate(-5px, -10px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-#arm-svg {
-  animation: arm-anim 4s infinite ease;
-  transform-origin: bottom;
-  transform-box: fill-box;
-}
-@keyframes arm-anim {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  33% {
-    transform: rotateZ(15deg);
-  }
-  66% {
-    transform: rotateZ(-15deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-#head-svg {
-  animation: arm-anim 4s infinite ease-in-out;
-  transform-origin: bottom;
-  transform-box: fill-box;
-}
-@keyframes arm-anim {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  33% {
-    transform: rotateZ(10deg);
-  }
-  66% {
-    transform: rotateZ(-15deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-#backgr-1 {
-  animation: background 3s infinite ease-in-out;
-}
-@keyframes background {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(50px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-#text-l1 {
-  animation: text 3s infinite linear;
-}
-
-#text-l2 {
-  animation: text 4s infinite ease;
-}
-#text-l3 {
-  animation: text 5s infinite ease-in-out;
-}
-
-#text-l4 {
-  animation: text 3s infinite ease-in;
-}
-
-#text-l5 {
-  animation: text 2s infinite ease-out;
-}
-@keyframes text {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(-50px);
-    width: 30%;
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-#circle {
-  animation: circle 6s infinite linear;
-}
-@keyframes circle {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-#text-btn {
-  animation: text-btn 5s infinite linear;
-  transform-box: fill-box;
-}
-@keyframes text-btn {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-/* END OF ABOUT SVG ANIMATION */
-
-/* End of About
+/* END OF ABOUT
 ===================*/
 
 /* HOW TO JOIN
@@ -637,9 +454,77 @@ svg:hover {
   font-size: 30px;
   text-align: center;
 }
-
+.button-wrapper {
+  right: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-bottom: 50px;
+}
 /* End of HOW TO JOIN
 ===================*/
+
+/* FACTS
+===================*/
+.facts {
+  background: rgb(255, 253, 246);
+  position: relative;
+  padding: 50px 0;
+}
+.facts-heading {
+  text-align: center;
+}
+.facts-list {
+  text-align: left;
+  font-size: 18px;
+  color: #000;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* END OF FACTS
+===================*/
+
+/* FOOTER
+===================*/
+footer {
+  background-color: rgba(21, 50, 58, 0.9);
+  color: #fff;
+  margin-bottom: -20px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 5%;
+}
+footer a {
+  text-decoration-color: #fff;
+  color: #fff;
+}
+.footer-info {
+  line-height: 1.6;
+}
+.footer-social-links {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.footer-social-links li {
+  padding: 0 7px;
+}
+.footer-social-links ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
 .copyright {
   padding: 20px 0;
   background-color: rgb(62, 142, 222);
@@ -647,14 +532,25 @@ svg:hover {
 
 .copyright__text {
   text-align: center;
-  font-size: 14px;
   line-height: 1.5;
+  font-size: 12px;
   color: #fff;
 }
 .copyright__text a {
-  color: #fdad73;
+  color: white;
   text-decoration: none;
+  color: rgb(255, 194, 1);
+  font-size: 16px;
 }
+.my-link a {
+  font-size: 12px;
+  color: rgb(255, 243, 203);
+}
+.copyright_date {
+  font-size: 14px;
+}
+/* END OF FOOTER
+===================*/
 
 /* Intro-title query */
 @media screen and (min-width: 0px) and (max-width: 399px) {
@@ -707,6 +603,9 @@ svg:hover {
 
 /* Navigation query and mobile editing*/
 @media screen and (min-width: 0px) and (max-width: 1086px) {
+  .image-container {
+    justify-content: center;
+  }
   .about-par {
     font-size: 1.2rem;
   }
@@ -756,8 +655,8 @@ svg:hover {
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(80vh at 90% -10%);
-    -webkit-clip-path: circle(80vh at 90% -10%);
+    clip-path: circle(95vh at 90% -10%);
+    -webkit-clip-path: circle(95vh at 90% -10%);
     pointer-events: all;
   }
   .nav-links li {

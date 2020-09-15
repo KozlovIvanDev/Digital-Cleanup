@@ -6,16 +6,6 @@ $(window).on("load", function () {
 
 })
 
-$(document).ready(function () {
-
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 0) {
-            $(".header").addClass("sticky");
-        } else {
-            $(".header").removeClass("sticky");
-        }
-    });
-});
 var headerHeight = $('header').outerHeight();
 
 $(".nav__link").click(function (e) {
@@ -69,6 +59,6 @@ hamburger.addEventListener("click", () => {
 
 var year = new Date().getFullYear();
 
-var date = `Copyright &copy; Let's do it, Ukraine! ${year}. All Rights Reserved.`;
+var date = `Copyright &copy; <a class="lets-a" href="https://letsdoitukraine.org/">Let's do it, Ukraine!</a> ${year}. All Rights Reserved.`;
 
 document.getElementsByClassName('copyright_date')[0].innerHTML = date;
