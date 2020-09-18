@@ -268,7 +268,7 @@ svg:hover {
   height: 80vh;
 }
 .main-btn {
-  width: 170px;
+  width: 200px;
   box-shadow: 0px 0px 30px rgba(39, 17, 0, 0.596);
   border-radius: 50px;
   font-weight: 700;
@@ -623,6 +623,13 @@ footer a {
   }
   .about-par {
     font-size: 1.2rem;
+  }
+  .about-container{
+    width: 95%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .grid-container {
     grid-gap: 20px 20px;
