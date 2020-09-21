@@ -132,10 +132,19 @@
 	}
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 640px) {
 
-	.codrops-icon span {
+	.second-li span {
 		display: none;
+	}
+
+}
+
+@media screen and (max-width: 380px) {
+
+	.second-li {
+		display: none;
+		opacity: 0;
 	}
 
 }
