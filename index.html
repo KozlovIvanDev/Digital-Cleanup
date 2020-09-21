@@ -14,7 +14,7 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
 
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="manifest" href="https://digitalcleanup.netlify.app/" />
     <link rel="apple-touch-icon" href="./img/letsdoit-logo-faces.svg" />
     <link rel="icon" href="./img/letsdoit-logo-faces.svg" />
 
@@ -23,8 +23,12 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/main.css" />
+    	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
 
     <meta name="theme-color" content="#fafafa" />
+    <script src="js/modernizr.custom.js"></script>
   </head>
 
   <body>
@@ -84,39 +88,58 @@
 
     <!-- Social-icons -->
 
+      <!--  -->
+
     <!-- Header -->
     <header class="header" id="header">
-      <a class="header__logo" href="https://letsdoitukraine.org/">
-        <img src="./img/letsdoit-logo-faces.svg" id="logofaces"/>
-      </a>
 
-      <nav class="nav" id="nav">
+     <nav class="navbar">
+      <input type="checkbox" id="check" class="checkbox" hidden />
+      <div class="hamburger-menu">
+        <label for="check" class="menu">
+          <div class="menu-line menu-line-1"></div>
+          <div class="menu-line menu-line-2"></div>
+          <div class="menu-line menu-line-3"></div>
+        </label>
+      </div>
 
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-        
-        <ul class="nav-links">
-          <li>
-            <a class="nav__link current" href="#home">Головна</a>
-          </li>
-          <li>
-            <a class="nav__link" href="#about">Про нас</a>
-          </li>
-          <li>
-            <a class="nav__link" href="#info">Інформація</a>
-          </li>
-          </li>
-          <li>
-            <a class="nav__link" href="#contact">Контакти</a>
-          </li>
-        </ul> 
-        
-      </nav>
+      			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<input placeholder="Search" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-download">Downloads</a>
+									<ul class="gn-submenu">
+										<li><a class="gn-icon gn-icon-illustrator">Vector Illustrations</a></li>
+										<li><a class="gn-icon gn-icon-photoshop">Photoshop files</a></li>
+									</ul>
+								</li>
+								<li><a class="gn-icon gn-icon-cog">Settings</a></li>
+								<li><a class="gn-icon gn-icon-help">Help</a></li>
+								<li>
+									<a class="gn-icon gn-icon-archive">Archives</a>
+									<ul class="gn-submenu">
+										<li><a class="gn-icon gn-icon-article">Articles</a></li>
+										<li><a class="gn-icon gn-icon-pictures">Images</a></li>
+										<li><a class="gn-icon gn-icon-videos">Videos</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+        <li><a class="codrops-icon codrops-icon-prev" href="https://www.worldcleanupday.org/"><span>World Cleanup Day</span></a></li>
+        <!-- <li><a class="header__logo" href="https://letsdoitukraine.org/"><img src="./img/letsdoit-logo-faces.svg" id="logofaces"/></a></li> -->
+				<li><a class="codrops-icon codrops-icon-drop" href="https://letsdoitukraine.org/"><span>Перейти на Let's do it, Ukraine!</span></a></li>
+			</ul>
 
-      <div class="social">
+      <!-- <div class="social">
         <a
           class="social__item"
           href="https://www.instagram.com/letsdoitukraine/"
@@ -144,7 +167,7 @@
             <use xlink:href="#youtube"></use>
           </svg>
         </a>
-      </div>
+      </div> -->
     </header>
 
     <section class="intro" id="home">
@@ -177,7 +200,7 @@
             <a
               class="secondary-btn"
               href="https://letsdoitukraine.org/media/wcd/"
-              >Перейти на Let's do it, Ukraine!</a
+              >Читати більше</a
             >
           </div>
       </div>
@@ -294,6 +317,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/main.js"></script>
+    <script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
