@@ -36,9 +36,8 @@ $(window).on("load", function () {
 //     throttle("scroll", "optimizedScroll");
 // })();
 
+// Some code for "Крутяшка" animation
 var logofaces = document.getElementById("logofaces")
-
-// to use the script *without* anti-jank, set the event to "scroll" and remove the anonymous function.
 
 window.addEventListener("optimizedScroll", function () {
     logofaces.style.transform = "rotate(" + window.pageYOffset + "deg)";
@@ -46,7 +45,7 @@ window.addEventListener("optimizedScroll", function () {
 
 
 
-
+//Display current date in footer
 var year = new Date().getFullYear();
 
 var date = `Copyright &copy; <a class="lets-a" href="https://letsdoitukraine.org/">Let's do it, Ukraine!</a> ${year}. All Rights Reserved.`;

@@ -1,10 +1,17 @@
 {
-  "name": "",
-  "version": "1",
-  "description": "",
-  "keywords": "",
+  "name": "digital_cleanup",
+  "version": "",
+  "description": "Ukrainian website for digital cleaning",
+  "keywords": [
+    "Digital Cleanup",
+    "Digital Cleaning",
+    "digital cleaning",
+    "digital cleanup",
+    "Цифрове прибирання",
+    "цифрове прибирання"
+  ],
   "license": "",
-  "author": "",
+  "author": "Kozlov Ivan <ikozlov15.ik@gmail.com> (https://ik-portfolio.netlify.app/)",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
@@ -12,6 +19,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0"
   }
 }
