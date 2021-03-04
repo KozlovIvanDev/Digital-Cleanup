@@ -11,7 +11,7 @@
     "цифрове прибирання"
   ],
   "license": "",
-  "author": "Kozlov Ivan <ikozlov15.ik@gmail.com> (https://ik-portfolio.netlify.app/)",
+  "author": "Kozlov Ivan <ikozlov15.ik@gmail.com>",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
