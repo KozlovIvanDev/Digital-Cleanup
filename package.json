@@ -10,5 +10,13 @@
     "Цифрове прибирання",
     "цифрове прибирання"
   ],
-  "author": "Kozlov Ivan <ikozlov15.ik@gmail.com>"
+  "author": "Kozlov Ivan <ikozlov15.ik@gmail.com>",
+  "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    }
 }
