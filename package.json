@@ -2,14 +2,14 @@
   "name": "digital_cleanup_2021",
   "version": "1.0.0",
   "description": "Цифрове прибирання 2021",
-  "main": "index.html",
+  "main": "dist/index.html",
   "dependencies": {
     "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel dist/index.html",
+    "build": "parcel build dist/index.html"
   },
   "repository": {
     "type": "git",
