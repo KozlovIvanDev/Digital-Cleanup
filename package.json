@@ -1,14 +1,25 @@
 {
-  "name": "digital_cleanup",
-  "version": "",
-  "description": "Ukrainian website for digital cleaning",
-  "keywords": [
-    "Digital Cleanup",
-    "Digital Cleaning",
-    "digital cleaning",
-    "digital cleanup",
-    "Цифрове прибирання",
-    "цифрове прибирання"
-  ],
-  "author": "Kozlov Ivan <ikozlov15.ik@gmail.com>"
+  "name": "digital_cleanup_2021",
+  "version": "1.0.0",
+  "description": "Цифрове прибирання 2021",
+  "main": "index.html",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "parcel <your entry file>",
+    "build": "parcel build <your entry file>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KozlovIvanDev/DigitalCleanup-New-Redesign-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KozlovIvanDev/DigitalCleanup-New-Redesign-/issues"
+  },
+  "homepage": "https://github.com/KozlovIvanDev/DigitalCleanup-New-Redesign-#readme"
 }
