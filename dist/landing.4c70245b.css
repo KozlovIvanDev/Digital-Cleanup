@@ -461,6 +461,9 @@ section {
   .vertical_card .sub_card_image_cont {
     margin: 0;
   }
+  .main-header {
+    display: none;
+  }
 }
 
 
