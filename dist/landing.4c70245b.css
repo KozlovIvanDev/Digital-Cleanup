@@ -378,18 +378,22 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
   }
   section {
-    margin: 30px;
+    margin: 30px 0;
   }
   .section_text_cont {
     width: 350px;
+  }
+  .content {
+    padding: 0;
   }
   .intro_img {
     display: none;
   }
   .offer_cont {
-    width: 300px;
+    width: 350px;
     margin-right: 0px;
     left: 0;
   }
@@ -400,14 +404,13 @@ section {
   .eco,
   .footer,
   .start_section {
-    width: 300px;
+    width: 350px;
     height: auto;
     display: flex;
     flex-direction: column;
   }
   .main_card,
-  .start_section,
-  .copy_header {
+  .start_section {
     display: none;
   }
   .footer_card {
@@ -415,10 +418,17 @@ section {
   }
   .header {
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .copy_header {
+    width: 75px;
+    height: auto;
   }
   .par,
   .sub_heading {
-    width: 350px;
+    width: 300px;
     text-align: left;
   }
   .flex_item {
@@ -443,7 +453,7 @@ section {
   .instruction_cont .section_text_cont,
   .why_section_cont .section_text_cont {
     text-align: left;
-    width: 300px;
+    width: 350px;
     left: 0;
   }
   .instr_buttons .secondary_button,
@@ -461,8 +471,57 @@ section {
   .vertical_card .sub_card_image_cont {
     margin: 0;
   }
-  .main-header {
+  .nav_element {
     display: none;
+  }
+  .visible {
+    display: flex;
+    color: var(--tooltip-color);
+    margin-left: 20px;
+  }
+  .step,
+  .why_card {
+    width: 350px;
+  }
+  .why_card {
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .step,
+  .why_card {
+    width: 325px;
+  }
+  .why_card {
+    height: 475px;
+  }
+  .section_text_cont,
+  .offer_cont,
+  .instruction_cont .section_text_cont,
+  .why_section_cont .section_text_cont {
+    width: 275px;
+  }
+  .instr_buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .step,
+  .why_card {
+    width: 300px;
+  }
+  .why_card {
+    height: 500px;
+  }
+  .section_text_cont,
+  .offer_cont,
+  .instruction_cont .section_text_cont,
+  .why_section_cont .section_text_cont {
+    width: 250px;
+  }
+  .instr_buttons .secondary_button {
+    margin: 10px;
   }
 }
 

@@ -479,4 +479,48 @@ section {
     color: var(--tooltip-color);
     margin-left: 20px;
   }
+  .step,
+  .why_card {
+    width: 350px;
+  }
+  .why_card {
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .step,
+  .why_card {
+    width: 325px;
+  }
+  .why_card {
+    height: 475px;
+  }
+  .section_text_cont,
+  .offer_cont,
+  .instruction_cont .section_text_cont,
+  .why_section_cont .section_text_cont {
+    width: 275px;
+  }
+  .instr_buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .step,
+  .why_card {
+    width: 300px;
+  }
+  .why_card {
+    height: 500px;
+  }
+  .section_text_cont,
+  .offer_cont,
+  .instruction_cont .section_text_cont,
+  .why_section_cont .section_text_cont {
+    width: 250px;
+  }
+  .instr_buttons .secondary_button {
+    margin: 10px;
+  }
 }
