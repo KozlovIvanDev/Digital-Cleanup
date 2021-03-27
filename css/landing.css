@@ -31,18 +31,18 @@ section {
   width: 550px;
 }
 .offer_cont {
-  width: 500px;
-  margin-right: 100px;
+  width: 550px;
+  margin-right: 50px;
 }
 .offer h1,
 .section_text_cont h2 {
-  font-size: 48px;
+  font-size: 2.5rem;
   color: var(--font-heading-pri);
   font-weight: 900;
   letter-spacing: 2px;
 }
 .section_text_cont h2 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 .offer p,
 .par {
@@ -51,6 +51,9 @@ section {
   color: var(--font-color);
   line-height: 30px;
   font-weight: 600;
+}
+.offer p{
+  font-size: 1.3rem;
 }
 .par {
   margin: 20px 0 0 0;
@@ -197,6 +200,15 @@ section {
 }
 .start_section {
   margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.start_section .section_text_cont {
+  margin-bottom: 50px;
+  text-align: center;
 }
 .start_card {
   background: var(--component_pri);
@@ -216,7 +228,12 @@ section {
 }
 #do_this {
   margin: 10px 0 25px 0;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  line-height: 25px;
 }
+
 .footer .section_text_cont {
   text-align: center;
 }
@@ -523,4 +540,193 @@ section {
   .instr_buttons .secondary_button {
     margin: 10px;
   }
+}
+
+.timeline {
+  overflow-x: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.timeline ol {
+  font-size: 0;
+  width: 100%;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: #fff;
+}
+.timeline ol li:first-child {
+  width: 0;
+}
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--component_pri);
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white;
+}
+
+.timeline ol li div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+  border-radius: 5px;
+  border-top-left-radius: 0;
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+  .timeline ol,
+  .timeline ol li {
+    width: auto;
+  }
+
+  .timeline ol {
+    padding: 0;
+    transform: none !important;
+  }
+
+  .timeline ol li {
+    display: block;
+    height: auto;
+    background: transparent;
+  }
+
+  .timeline ol li:first-child {
+    margin-top: 25px;
+  }
+
+  .timeline ol li:not(:first-child) {
+    margin-left: auto;
+  }
+
+  .timeline ol li div {
+    width: 94%;
+    height: auto !important;
+    margin: 0 auto 25px;
+  }
+
+  .timeline ol li div {
+    position: static;
+  }
+
+  .timeline ol li:nth-child(odd) div {
+    transform: none;
+  }
+
+  .timeline ol li:nth-child(odd) div::before,
+  .timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: none;
+    border-left: 1px solid white;
+    height: 25px;
+  }
+
+  .timeline ol li:last-child,
+  .timeline ol li:nth-last-child(2) div::before,
+  .timeline ol li:not(:last-child)::after,
+  .timeline .arrows {
+    display: none;
+  }
+}
+.copyright {
+  height: 50px;
+  background: var(--component_pri);
+  color: var(--font-color);
+  padding: 50px 25px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: -100%;
+}
+.copyright_author {
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.copyright_author a {
+  padding: 5px;
+  color: var(--font-color);
+  border-bottom: 2px solid rgba(224, 254, 255, 0.7);
+}
+.copyright_author a:hover {
+  color: rgba(224, 254, 255, 0.9);
+}
+.copyright_date {
+  font-weight: 800;
+  font-size: 16px;
 }
