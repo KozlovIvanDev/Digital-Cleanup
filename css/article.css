@@ -81,9 +81,16 @@
   outline: none;
   font-size: 14px;
   padding: 5px 10px;
-  background: var();
   cursor: pointer;
 }
+.action_sec_button a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+
 .profile_img {
   width: 70px;
   height: 70px;

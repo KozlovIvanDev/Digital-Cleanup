@@ -15,6 +15,21 @@
     <link rel="stylesheet" type="text/css" href="./css/landing.css" />
   </head>
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src =
+          "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
     <div class="container">
       <header class="main-header header dark_header" id="header">
         <div class="menu_first_group display_flex_row">
@@ -134,7 +149,8 @@
 
                   <a href="./articles/Article2.html">
                     <h2 class="article_name">
-                      №1: Очищення комп'ютерів. Серія порад для проведення цифрового прибирання
+                      №1: Очищення комп'ютерів. Серія порад для проведення
+                      цифрового прибирання
                     </h2>
                   </a>
                   <div class="article_tags">
@@ -171,19 +187,30 @@
                     </button>
                   </div>
                   <div class="action_right">
-                    <button class="action_sec_button action_share">
-                      <img
-                        src="./images/light-theme/share.svg"
-                        alt=""
-                        class="action_icon_b small_icon light_theme_icon"
-                      />
-                      <img
-                        src="./images/dark-theme/share.svg"
-                        alt=""
-                        class="action_icon_b small_icon dark_theme_icon"
-                      />
-                      <h4 class="action_name">Поширити</h4>
+                    <button
+                      class="fb-share-button action_sec_button action_share"
+                      data-href="https://digitalcleanupletsdoitukraine.netlify.app/articles/article2"
+                      data-layout="button"
+                    >
+                      <a
+                        target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdigitalcleanupletsdoitukraine.netlify.app%2Farticles%2Farticle2&amp;src=sdkpreparse"
+                        class="fb-xfbml-parse-ignore action_name"
+                      >
+                        <img
+                          src="./images/light-theme/share.svg"
+                          alt=""
+                          class="action_icon_b small_icon light_theme_icon"
+                        />
+                        <img
+                          src="./images/dark-theme/share.svg"
+                          alt=""
+                          class="action_icon_b small_icon dark_theme_icon"
+                        />
+                        <h4 class="action_name">Поширити</h4>
+                      </a>
                     </button>
+
                     <button class="action_sec_button action_save">
                       <img
                         src="./images/light-theme/save.svg"
@@ -207,7 +234,7 @@
                   </a>
 
                   <a href="./articles/Article.html">
-                    <h2 class="article_name">Цифрове прибирання у 2020 році</h2>
+                    <h2 class="article_name">Досвід цифрового прибирання у 2020 році</h2>
                   </a>
                   <div class="article_tags">
                     <div class="tag first-tag">
@@ -249,18 +276,28 @@
                     </button>
                   </div>
                   <div class="action_right">
-                    <button class="action_sec_button action_share">
-                      <img
-                        src="./images/light-theme/share.svg"
-                        alt=""
-                        class="action_icon_b small_icon light_theme_icon"
-                      />
-                      <img
-                        src="./images/dark-theme/share.svg"
-                        alt=""
-                        class="action_icon_b small_icon dark_theme_icon"
-                      />
-                      <h4 class="action_name">Поширити</h4>
+                    <button
+                      class="fb-share-button action_sec_button action_share"
+                      data-href="https://digitalcleanupletsdoitukraine.netlify.app/articles/article"
+                      data-layout="button"
+                    >
+                      <a
+                        target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdigitalcleanupletsdoitukraine.netlify.app%2Farticles%2Farticle&amp;src=sdkpreparse"
+                        class="fb-xfbml-parse-ignore action_name"
+                      >
+                        <img
+                          src="./images/light-theme/share.svg"
+                          alt=""
+                          class="action_icon_b small_icon light_theme_icon"
+                        />
+                        <img
+                          src="./images/dark-theme/share.svg"
+                          alt=""
+                          class="action_icon_b small_icon dark_theme_icon"
+                        />
+                        <h4 class="action_name">Поширити</h4>
+                      </a>
                     </button>
                     <button class="action_sec_button action_save">
                       <img
