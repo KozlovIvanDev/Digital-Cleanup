@@ -444,6 +444,22 @@ section {
     width: 45rem;
     color: var(--font-sec);
   }
+  .sidebar {
+    display: none;
+  }
+  .col-lg-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .article {
+    background: var(--component_pri);
+    padding: 40px 20px;
+    width: 90vw;
+    border-radius: 5px;
+    margin-bottom: 35px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .offer_cont {
@@ -470,6 +486,9 @@ section {
     font-size: 1.2rem;
     width: 35rem;
     color: var(--font-sec);
+  }
+  .nav_register {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -599,9 +618,6 @@ section {
   .vertical_card .sub_card_image_cont {
     margin: 0;
   }
-  .nav_element {
-    display: none;
-  }
   .visible {
     display: flex;
     color: var(--tooltip-color);
@@ -644,6 +660,30 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .article_image {
+    height: 150px;
+  }
+  .article_tags,
+  .action_left {
+    display: none;
+  }
+  .article_action {
+    justify-content: center;
+  }
+  .article_name {
+    font-size: 18px;
+  }
+  #article .primary_button {
+    margin-bottom: 30px;
+  }
+  .visible {
+    display: none;
+    color: var(--tooltip-color);
+    margin-left: 20px;
+  }
+  .event_card {
+    width: 100px;
   }
 }
 @media only screen and (max-width: 400px) {
