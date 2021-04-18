@@ -419,6 +419,11 @@ section {
 .vertical_card .sub_card_image_cont:last-child {
   margin-bottom: 0;
 }
+.desc_img {
+  width: 30vw;
+  height: auto;
+  border-radius: 5px;
+}
 
 @media only screen and (max-width: 1200px) {
   .intro_img {
@@ -688,6 +693,9 @@ section {
   }
   .event_card {
     width: 100px;
+  }
+  .desc_img {
+    display: none;
   }
 }
 @media only screen and (max-width: 400px) {
