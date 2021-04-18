@@ -187,7 +187,7 @@
                       Ми починаємо серію з шести статтей з порадами для
                       проведення цифрового прибирання. Ви зможете знайти інші
                       статті з серії за посиланнями:
-                      <br />
+                       <br />
                       <br />
                       <a
                         class="text_link"
@@ -202,8 +202,6 @@
                         href="https://digitalcleanupletsdoitukraine.netlify.app/articles/article3"
                         >Друга стаття про очищення галереї</a
                       >
-                      <br />
-                      <br />
                       <a
                       class="text_link"
                       href="https://digitalcleanupletsdoitukraine.netlify.app/articles/article4"
@@ -241,16 +239,9 @@
             </div>
           </div>
         </div>
-        <section class="copyright">
-          <div class="copyright_date"></div>
-          <div class="copyright_author">
-            <a href="https://www.instagram.com/ivan_kozlov.ik/"
-              >Автор сайту - Козлов Іван</a
-            >
-          </div>
-        </section>
       </div>
     </div>
+    <script src="../js/script.js"></script>
     <script
       type="text/javascript"
       src="../js/simple-sticky-sidebar.js"
@@ -263,18 +254,6 @@
             .height + 20, // or any no i.e 20
         bottomSpace: 20,
       });
-      
-      const year = new Date().getFullYear();
-      const date = `Copyright &copy; Digital Cleanup ${year}. All Rights Reserved.`;
-
-      document.getElementsByClassName("copyright_date")[0].innerHTML = date;
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        header.classList.toggle("header_background", window.scrollY > 0);
-      });
-      if (window.scrollY > 0) {
-        header.classList.add("header_background");
-      }
     </script>
   </body>
 </html>
