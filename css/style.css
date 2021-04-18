@@ -75,7 +75,7 @@ div {
   top: 0;
   z-index: 100;
 }
-.header_background{
+.header_background {
   background: var(--color-component);
 }
 
@@ -126,6 +126,9 @@ div {
 }
 .theme_controller {
   background-color: var(--color-container);
+}
+.color {
+  color: var(--font-heading-pri);
 }
 .flex_item {
   display: flex;

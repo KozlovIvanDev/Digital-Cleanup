@@ -260,6 +260,10 @@ section {
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
+.event_section_cont .section_text_cont {
+  text-align: center;
+  width: 70vw;
+}
 .why_card {
   width: 400px;
   height: 400px;
