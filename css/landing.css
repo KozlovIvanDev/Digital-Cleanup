@@ -22,6 +22,12 @@ section {
   justify-content: space-between;
   width: 1100px;
 }
+.timeline .par {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  color: rgb(14, 0, 41);
+}
 .curator_image {
   justify-content: center;
 }
@@ -140,14 +146,14 @@ section {
   margin: 25px;
 }
 .step_head h2 {
-  font-weight: 800;
+  font-weight: 700;
   color: var(--tooltip-color);
   font-size: 32;
-  text-transform: uppercase;
 }
 .step_head h3 {
   font-size: 24;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 1.15px;
   color: var(--tooltip-color);
   margin: 10px 0 20px 0;
   text-transform: uppercase;
